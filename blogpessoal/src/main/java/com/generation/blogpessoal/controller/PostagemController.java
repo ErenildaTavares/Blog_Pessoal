@@ -28,6 +28,7 @@ import jakarta.validation.Valid;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PostagemController {
 
+	//autowired injecao de dependencia = tranferencia de responsabilidade
 	@Autowired
 	private PostagemRepository postagemRepository;
 	
