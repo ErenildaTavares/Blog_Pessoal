@@ -38,6 +38,10 @@ public class Postagem {
 	@JsonIgnoreProperties("postagem") //2
 	private Tema tema; //3
 	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
+	
 	//depois gera gets e sets de tema
 	
 
@@ -79,6 +83,14 @@ public class Postagem {
 
 	public void setTema(Tema tema) {
 		this.tema = tema;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 	
 	
